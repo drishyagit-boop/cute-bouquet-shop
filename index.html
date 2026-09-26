@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bloom & Bow 🎀 | Flowers Wrapped With Love</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- FLOATING DECORATIONS -->
+<div class="floating-decor">
+  <span>♡</span>
+  <span>✿</span>
+  <span>🎀</span>
+  <span>✧</span>
+  <span>🌸</span>
+  <span>🦋</span>
+</div>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+
+    <a href="#home" class="logo">
+      🌷 Bloom & Bow 🎀
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#bouquets">Bouquets</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-icons">
+      <button onclick="openWishlist()">♡ <span id="wishlistCount">0</span></button>
+      <button onclick="openCart()">🛍️ <span id="cartCount">0</span></button>
+    </div>
+
+  </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <p class="eyebrow">
+      FRESH FLOWERS · PRETTY RIBBONS · HAPPY HEARTS
+    </p>
+
+    <h1>
+      A Little Bouquet,
+      <em>A Lot of Love</em> ♡
+    </h1>
+
+    <p>
+      Flowers wrapped with love, ribbons & a little bit of magic.
+      Beautiful bouquets for birthdays, crushes, celebrations
+      and all the tiny moments worth remembering.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#bouquets" class="btn primary">
+        Shop Bouquets 🎀
+      </a>
+
+      <a href="#builder" class="btn secondary">
+        Create a Custom Bouquet 🌷
+      </a>
+    </div>
+
+    <div class="hero-note">
+      ♡ Handcrafted with lots of love.
+    </div>
+
+  </div>
+
+
+  <div class="hero-image">
+
+    <div class="decor-heart">♡</div>
+    <div class="decor-star">✧</div>
+    <div class="decor-butterfly">🦋</div>
+
+    <div class="image-frame">
+
+      <img
+        src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=85"
+        alt="Beautiful bouquet"
+      >
+
+      <div class="ribbon-label">
+        wrapped<br>
+        with love 🎀
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FEATURES -->
+<section class="features">
+
+  <div>
+    <span>🌷</span>
+    <strong>Fresh Flowers</strong>
+    <small>Picked with care</small>
+  </div>
+
+  <div>
+    <span>🎀</span>
+    <strong>Handcrafted</strong>
+    <small>Made with love</small>
+  </div>
+
+  <div>
+    <span>🚚</span>
+    <strong>Same-Day Delivery</strong>
+    <small>Selected areas</small>
+  </div>
+
+  <div>
+    <span>💌</span>
+    <strong>Beautiful Packaging</strong>
+    <small>Pretty from every angle</small>
+  </div>
+
+</section>
+
+
+<!-- BOUQUETS -->
+<section class="section" id="bouquets">
+
+  <div class="section-title">
+
+    <p class="eyebrow">
+      OUR PRETTIEST PICKS
+    </p>
+
+    <h2>
+      Pretty Little Bouquets 🎀
+    </h2>
+
+    <p>
+      Made for birthdays, anniversaries, crushes,
+      celebrations and those "I saw this and thought of you"
+      moments.
+    </p>
+
+  </div>
+
+  <div class="products" id="productGrid"></div>
+
+</section>
+
+
+<!-- PROMOTIONAL SECTION -->
+<section class="love-section">
+
+  <div class="love-image">
+
+    <img
+      src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=85"
+      alt="Pink flowers"
+    >
+
+    <span>🎀</span>
+
+  </div>
+
+
+  <div class="love-content">
+
+    <p class="eyebrow">
+      THE BLOOM & BOW TOUCH
+    </p>
+
+    <h2>
+      Wrapped With A Little Extra Love 🎀
+    </h2>
+
+    <p>
+      Every bouquet is carefully hand-arranged,
+      beautifully wrapped and finished with our
+      signature bow.
+    </p>
+
+    <div class="mini-list">
+
+      <p>♡ Satin ribbons</p>
+      <p>♡ Handwritten notes</p>
+      <p>♡ Pretty wrapping</p>
+      <p>♡ Fresh blooms</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CUSTOM BUILDER -->
+<section class="section builder-section" id="builder">
+
+  <div class="section-title">
+
+    <p class="eyebrow">
+      YOUR FLOWERS · YOUR WAY
+    </p>
+
+    <h2>
+      Make It Yours ♡
+    </h2>
+
+    <p>
+      Create a bouquet that feels like it was made
+      just for them.
+    </p>
+
+  </div>
+
+
+  <div class="builder">
+
+    <div class="builder-preview">
+
+      <div class="preview-bow">
+        🎀
+      </div>
+
+      <div class="preview-flower" id="previewFlower">
+        🌹
+      </div>
+
+      <h3 id="previewText">
+        Your pretty bouquet awaits ♡
+      </h3>
+
+      <div class="price">
+        Estimated:
+        <strong id="builderPrice">
+          ₹899
+        </strong>
+      </div>
+
+    </div>
+
+
+    <div class="builder-form">
+
+      <label>
+        Flower Type
+
+        <select id="flowerType" onchange="updateBuilder()">
+          <option value="0">Roses</option>
+          <option value="100">Tulips</option>
+          <option value="150">Lilies</option>
+          <option value="0">Sunflowers</option>
+          <option value="50">Baby's Breath</option>
+        </select>
+
+      </label>
+
+
+      <label>
+        Flower Color
+
+        <select id="flowerColor" onchange="updateBuilder()">
+          <option>Blush Pink</option>
+          <option>Pastel White</option>
+          <option>Lavender</option>
+          <option>Cherry Red</option>
+          <option>Sunny Yellow</option>
+        </select>
+
+      </label>
+
+
+      <label>
+        Bouquet Size
+
+        <select id="bouquetSize" onchange="updateBuilder()">
+          <option value="0">Sweet</option>
+          <option value="250">Lovely +₹250</option>
+          <option value="500">Grand +₹500</option>
+        </select>
+
+      </label>
+
+
+      <label>
+        Wrapping
+
+        <select id="wrapping" onchange="updateBuilder()">
+          <option value="0">Pastel Wrapping</option>
+          <option value="150">Luxury Wrapping +₹150</option>
+          <option value="50">Kraft Wrapping +₹50</option>
+        </select>
+
+      </label>
+
+
+      <label>
+        Ribbon
+
+        <select id="ribbon">
+          <option>Pink</option>
+          <option>White</option>
+          <option>Lavender</option>
+          <option>Burgundy</option>
+        </select>
+
+      </label>
+
+
+      <label>
+        Occasion
+
+        <select id="occasion">
+          <option>Birthday</option>
+          <option>Anniversary</option>
+          <option>Wedding</option>
+          <option>Graduation</option>
+          <option>Just Because</option>
+          <option>Date Night</option>
+        </select>
+
+      </label>
+
+
+      <label class="full">
+        Personalized Message
+
+        <textarea
+          rows="4"
+          placeholder="Write a tiny love note..."
+        ></textarea>
+
+      </label>
+
+
+      <button
+        class="btn primary full"
+        onclick="addCustomBouquet()"
+      >
+        Create My Bouquet 🎀
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- OCCASIONS -->
+<section class="section occasions" id="collections">
+
+  <div class="section-title">
+
+    <p class="eyebrow">
+      FLOWERS FOR EVERY LITTLE MOMENT
+    </p>
+
+    <h2>
+      Choose Your Occasion 🌸
+    </h2>
+
+  </div>
+
+
+  <div class="occasion-grid">
+
+    <div>🎂<h3>Birthday</h3><p>Make their day bloom.</p></div>
+
+    <div>❤️<h3>Anniversary</h3><p>Celebrate your love.</p></div>
+
+    <div>💍<h3>Wedding</h3><p>Flowers for forever.</p></div>
+
+    <div>🎓<h3>Graduation</h3><p>A pretty little congrats.</p></div>
+
+    <div>🌷<h3>Just Because</h3><p>No reason needed.</p></div>
+
+    <div>💌<h3>Apology</h3><p>Say it softly.</p></div>
+
+    <div>🩷<h3>Date Night</h3><p>Set the mood.</p></div>
+
+    <div>🎀<h3>Surprise Gift</h3><p>Make them smile.</p></div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+
+  <div class="about-image">
+
+    <img
+      src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85"
+      alt="Pink flowers"
+    >
+
+    <span>♡</span>
+
+  </div>
+
+
+  <div class="about-content">
+
+    <p class="eyebrow">
+      A LITTLE STORY
+    </p>
+
+    <h2>
+      A Little Story Behind Every Bloom ♡
+    </h2>
+
+    <p>
+      Bloom & Bow began with a simple idea:
+      flowers should feel personal.
+    </p>
+
+    <p>
+      Our bouquets are designed to help you express
+      love, friendship, gratitude, celebration and
+      all the feelings that are sometimes hard to
+      put into words.
+    </p>
+
+    <a href="#contact" class="btn primary">
+      Say Hello 💌
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+
+  <div class="section-title">
+
+    <p class="eyebrow">
+      LOVE NOTES
+    </p>
+
+    <h2>
+      Love Notes From Our Customers 💌
+    </h2>
+
+  </div>
+
+
+  <div class="review-grid">
+
+    <article>
+      <div class="stars">★★★★★</div>
+
+      <p>
+        "THE CUTEST BOUQUET EVER!!
+        The bow was literally everything 🎀💕"
+      </p>
+
+      <strong>— Ananya</strong>
+    </article>
+
+
+    <article>
+      <div class="stars">★★★★★</div>
+
+      <p>
+        "Beautiful flowers, gorgeous wrapping
+        and the sweetest presentation."
+      </p>
+
+      <strong>— Riya</strong>
+    </article>
+
+
+    <article>
+      <div class="stars">★★★★★</div>
+
+      <p>
+        "Ordered this for my best friend's birthday
+        and she absolutely loved it!"
+      </p>
+
+      <strong>— Meera</strong>
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section class="section">
+
+  <div class="section-title">
+
+    <p class="eyebrow">
+      A LITTLE BLOOM ON YOUR FEED
+    </p>
+
+    <h2>
+      Pretty Things We Love 🌷
+    </h2>
+
+  </div>
+
+
+  <div class="gallery">
+
+    <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=700&q=80">
+
+    <img src="https://images.unsplash.com/photo-1495231916356-a86217efff12?auto=format&fit=crop&w=700&q=80">
+
+    <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=700&q=80">
+
+    <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=700&q=80">
+
+    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=700&q=80">
+
+    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=700&q=80">
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+
+  <div class="section-title">
+
+    <p class="eyebrow">
+      LET'S MAKE SOMEONE'S DAY
+    </p>
+
+    <h2>
+      Send A Little Love 🌷
+    </h2>
+
+  </div>
+
+
+  <div class="contact-container">
+
+    <form onsubmit="submitOrder(event)">
+
+      <div class="form-row">
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          required
+        >
+
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Phone Number"
+          required
+        >
+
+      </div>
+
+
+      <div class="form-row">
+
+        <input
+          type="email"
+          placeholder="Email"
+        >
+
+        <input
+          type="date"
+        >
+
+      </div>
+
+
+      <select>
+
+        <option>Choose a bouquet</option>
+
+        <option>Blush Baby</option>
+        <option>Cherry Love</option>
+        <option>Sweet Pea</option>
+        <option>Lavender Kiss</option>
+        <option>Sunshine Girl</option>
+        <option>Pretty in Pink</option>
+        <option>Cloud Nine</option>
+        <option>Coquette Bloom</option>
+
+      </select>
+
+
+      <input
+        type="text"
+        placeholder="Delivery Address"
+        required
+      >
+
+
+      <textarea
+        rows="5"
+        placeholder="Your personalized message..."
+      ></textarea>
+
+
+      <button class="btn primary">
+        Send My Flower Request 🎀
+      </button>
+
+      <p id="successMessage"></p>
+
+    </form>
+
+
+    <div class="contact-card">
+
+      <div class="big-bow">
+        🎀
+      </div>
+
+      <h3>
+        Bloom & Bow
+      </h3>
+
+      <p>
+        Flowers wrapped with love,
+        ribbons & a little bit of magic.
+      </p>
+
+      <div class="contact-info">
+        📍 <span>
+          Your City, India
+        </span>
+      </div>
+
+      <div class="contact-info">
+        📞 <span>
+          +91 98765 43210
+        </span>
+      </div>
+
+      <div class="contact-info">
+        📧 <span>
+          hello@bloomandbow.com
+        </span>
+      </div>
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/919876543210"
+        target="_blank"
+      >
+        💬 Order on WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="footer-content">
+
+    <div>
+      <h2>🌷 Bloom & Bow 🎀</h2>
+
+      <p>
+        Flowers wrapped with love,
+        ribbons & a little bit of magic.
+      </p>
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#home">Home</a>
+      <a href="#bouquets">Bouquets</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+
+  </div>
+
+
+  <p class="copyright">
+    Made with ♡, flowers & bows · © 2026 Bloom & Bow
+  </p>
+
+</footer>
+
+
+<!-- CART DRAWER -->
+<div
+  class="overlay"
+  id="overlay"
+  onclick="closeDrawers()"
+></div>
+
+
+<div class="drawer" id="cartDrawer">
+
+  <div class="drawer-header">
+
+    <h2>
+      Your Little Cart 🛍️
+    </h2>
+
+    <button onclick="closeDrawers()">
+      ×
+    </button>
+
+  </div>
+
+
+  <div
+    class="drawer-items"
+    id="cartItems"
+  ></div>
+
+
+  <div class="drawer-bottom">
+
+    <div>
+      Total
+      <strong id="cartTotal">
+        ₹0
+      </strong>
+    </div>
+
+    <button
+      class="btn primary"
+      onclick="checkout()"
+    >
+      Proceed to Order 🎀
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- WISHLIST -->
+<div
+  class="drawer"
+  id="wishlistDrawer"
+>
+
+  <div class="drawer-header">
+
+    <h2>
+      Your Wishlist ♡
+    </h2>
+
+    <button onclick="closeDrawers()">
+      ×
+    </button>
+
+  </div>
+
+  <div
+    class="drawer-items"
+    id="wishlistItems"
+  ></div>
+
+</div>
+
+
+<div
+  class="toast"
+  id="toast"
+></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
